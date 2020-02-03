@@ -34,6 +34,15 @@ public class VectorComplejo {
     }
 
     /**
+     * consulta el vector completo
+     * @return
+     * elementos
+     */
+    public List<NumeroComplejo> getElementos(){
+        return this.elementos;
+    }
+
+    /**
      * anade un elemento al vector
      * param
      * elemto
@@ -51,7 +60,7 @@ public class VectorComplejo {
      */
     public VectorComplejo sumeVectores(VectorComplejo vector) throws CalculadoraComplejosException{
         if(!this.checkSize(vector)) {
-           // throw new CalculadoraComplejosException(CalculadoraComplejosException.VECTOR_SIZE_ERROR);
+            throw new CalculadoraComplejosException(CalculadoraComplejosException.SIZE_ERROR);
         }
         VectorComplejo respuesta= new VectorComplejo();
         for(int i= 0; i< this.getSize(); i++) {
@@ -66,10 +75,11 @@ public class VectorComplejo {
      * vector
      * @return
      * respuesta
+     * @throws CalculadoraComplejosException
      */
     public VectorComplejo resteVectores(VectorComplejo vector) throws CalculadoraComplejosException{
         if(!this.checkSize(vector)) {
-           // throw new CalculadoraComplejosException(CalculadoraComplejosException.VECTOR_SIZE_ERROR);
+            throw new CalculadoraComplejosException(CalculadoraComplejosException.SIZE_ERROR);
         }
         VectorComplejo respuesta= new VectorComplejo();
         for(int i= 0; i< this.getSize(); i++) {
@@ -84,12 +94,8 @@ public class VectorComplejo {
      * respuesta
      */
     public VectorComplejo inversaVector() {
-        VectorComplejo respuesta= new VectorComplejo();
         NumeroComplejo menosUno= new NumeroComplejo(-1.0,0.0);
-        for(int i= 0; i< this.getSize(); i++) {
-            respuesta.add(this.get(i).productoComplejo(menosUno));
-        }
-        return respuesta;
+        return this.multiplicacionEscalar(menosUno);
     }
 
     /**
@@ -107,6 +113,45 @@ public class VectorComplejo {
         return respuesta;
     }
 
+    /**
+     * Retorna la norma del vector
+     * @return Double la norma del vector
+     */
+    public Double norma() {
+        Double ans=0.0;
+        for(int i= 0; i< this.getSize(); i++) {
+            ans+=Math.pow(this.get(i).getParteReal(), 2)+Math.pow(this.get(i).getParteImaginaria(), 2);
+        }
+        ans=Math.sqrt(ans);
+        return ans;
+    }
+
+    /**
+     * Retorna la distancia entre los dos vectores
+     * @param otro El otro vector
+     * @return Double La distancia entre los dos vectores
+     * @throws CalculadoraComplejosException
+     */
+    public Double distancia(VectorComplejo otro) throws CalculadoraComplejosException {
+        return this.resteVectores(otro).norma();
+    }
+
+    /**
+     * retorna el producto interno del vector
+     * @param vc el otro vector
+     * @return NumeroComplejo el resultado
+     * @throws CalculadoraComplejosException
+     */
+    public NumeroComplejo productoInterno(VectorComplejo vc) throws CalculadoraComplejosException{
+        NumeroComplejo respuesta= new NumeroComplejo(0.0,0.0);
+        if(!this.checkSize(vc)){
+            throw new CalculadoraComplejosException(CalculadoraComplejosException.SIZE_ERROR);
+        }
+        for(int i= 0; i< this.getSize(); i++){
+            respuesta= respuesta.sumeComplejo(this.get(i).productoComplejo(vc.get(i)));
+        }
+        return respuesta;
+    }
 
 
     /**
@@ -122,11 +167,19 @@ public class VectorComplejo {
         return flag;
     }
 
+    public NumeroComplejo[] getArray() {
+        NumeroComplejo[] ans=new NumeroComplejo[elementos.size()];
+        for(int i=0;i<elementos.size();i++){
+            ans[i]=elementos.get(i);
+        }
+        return ans;
+    }
+
     @Override
     public boolean equals(Object o){
         VectorComplejo nv= (VectorComplejo) o;
         boolean flag= true;
-        if(this.checkSize(nv)){
+        if(!this.checkSize(nv)){
             flag= false;
         }
         else{

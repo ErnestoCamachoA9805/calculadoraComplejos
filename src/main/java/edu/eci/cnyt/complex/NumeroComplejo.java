@@ -7,10 +7,10 @@ import javafx.util.Pair;
  * Ernesto Camacho Arroyave 2154021
  */
 public class NumeroComplejo {
-	private double parteReal;
-	private double parteImaginaria;
-	
-		public NumeroComplejo (double parteReal,double parteImaginaria) {
+	private Double parteReal;
+	private Double parteImaginaria;
+
+		public NumeroComplejo (Double parteReal,Double parteImaginaria) {
 			this.parteReal= parteReal;
 			this.parteImaginaria= parteImaginaria;
 		}
@@ -19,7 +19,7 @@ public class NumeroComplejo {
          * retorna la parte real del numero complejo
          * @return parteReal
          */
-        public double getParteReal() {
+        public Double getParteReal() {
 		return this.parteReal;
 	}
 	
@@ -27,7 +27,7 @@ public class NumeroComplejo {
          * retorna la parte real del numero complejo
          * @return parteReal
          */
-		public double getParteImaginaria() {
+		public Double getParteImaginaria() {
 		return this.parteImaginaria;
 	}
 	
@@ -61,8 +61,8 @@ public class NumeroComplejo {
          * NumeroComplejo
          */
 		public NumeroComplejo resteComplejo (NumeroComplejo c) {
-			double pReal= this.getParteReal() - c.getParteReal();
-			double pImaginaria= this.getParteImaginaria() - c.getParteImaginaria();
+			Double pReal= this.getParteReal() - c.getParteReal();
+			Double pImaginaria= this.getParteImaginaria() - c.getParteImaginaria();
 			return new NumeroComplejo(pReal, pImaginaria);
 		}
 	
@@ -74,8 +74,8 @@ public class NumeroComplejo {
          * NumeroComplejo
          */
         public NumeroComplejo productoComplejo (NumeroComplejo c) {
-			double pReal= (this.getParteReal() * c.getParteReal()) - (this.getParteImaginaria() * c.getParteImaginaria());
-			double pImaginaria= (this.getParteReal() * c.getParteImaginaria()) + (c.getParteReal() * this.getParteImaginaria());
+			Double pReal= (this.getParteReal() * c.getParteReal()) - (this.getParteImaginaria() * c.getParteImaginaria());
+			Double pImaginaria= (this.getParteReal() * c.getParteImaginaria()) + (c.getParteReal() * this.getParteImaginaria());
 			return new NumeroComplejo(pReal, pImaginaria);
         }
         
@@ -86,9 +86,12 @@ public class NumeroComplejo {
          * @return 
          * NumeroComplejo
          */
-        public NumeroComplejo dividaComplejo (NumeroComplejo c) {
-			double pReal= ((this.getParteReal() * c.getParteReal()) + (this.getParteImaginaria() * c.getParteImaginaria())) / (Math.pow(c.getParteReal(), 2) + Math.pow(c.getParteImaginaria(), 2));
-			double pImaginaria= ((this.getParteImaginaria() * c.getParteReal()) - (this.getParteReal() * c.getParteImaginaria())) / (Math.pow(c.getParteReal(), 2) + Math.pow(c.getParteImaginaria(), 2));
+        public NumeroComplejo dividaComplejo (NumeroComplejo c) throws CalculadoraComplejosException {
+        	if((c.getParteReal().compareTo(new Double(0.0))== 0) && (c.getParteImaginaria().compareTo(new Double(0.0)) == 0)){
+        		throw new CalculadoraComplejosException(CalculadoraComplejosException.DIVISION_BY_0);
+			}
+			Double pReal= ((this.getParteReal() * c.getParteReal()) + (this.getParteImaginaria() * c.getParteImaginaria())) / (Math.pow(c.getParteReal(), 2) + Math.pow(c.getParteImaginaria(), 2));
+			Double pImaginaria= ((this.getParteImaginaria() * c.getParteReal()) - (this.getParteReal() * c.getParteImaginaria())) / (Math.pow(c.getParteReal(), 2) + Math.pow(c.getParteImaginaria(), 2));
 			return new NumeroComplejo(pReal, pImaginaria);
         }
         
@@ -106,8 +109,8 @@ public class NumeroComplejo {
          * @return 
          * d
          */
-        public double moduloComplejo(){
-            double d= Math.pow((Math.pow(this.getParteReal(), 2) + Math.pow(this.getParteImaginaria(), 2)),0.5);
+        public Double moduloComplejo(){
+			Double d= Math.pow((Math.pow(this.getParteReal(), 2) + Math.pow(this.getParteImaginaria(), 2)),0.5);
             return d;
         }
 
@@ -135,15 +138,15 @@ public class NumeroComplejo {
 		 * @return
 		 * respuesta
 		 */
-		public double calculeFase(){
-			double suma= 0.0;
+		public Double calculeFase(){
+			Double suma= 0.0;
 			if(this.getParteReal()< 0 && this.getParteReal()< 0){
 				suma= Math.PI;
 			}
 			else if (this.getParteReal()<0 && this.getParteImaginaria()>0){
 				suma= Math.PI;
 			}
-			double imaginaria= Math.atan((this.getParteImaginaria()/this.getParteReal())) + suma;
+			Double imaginaria= Math.atan((this.getParteImaginaria()/this.getParteReal())) + suma;
 			return imaginaria;
 		}
 
@@ -153,7 +156,7 @@ public class NumeroComplejo {
 	public boolean equals(Object c){
             NumeroComplejo nc= (NumeroComplejo) c;
             boolean flag= false;
-            if((this.getParteReal() == nc.getParteReal()) && (this.getParteImaginaria() == nc.getParteImaginaria())){
+            if(((this.getParteReal().compareTo(nc.getParteReal())) == 0) && ((this.getParteImaginaria().compareTo(nc.getParteImaginaria()))== 0)){
                 flag= true;
             }
             return flag;

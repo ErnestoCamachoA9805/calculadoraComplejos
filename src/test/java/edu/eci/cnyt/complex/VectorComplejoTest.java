@@ -77,9 +77,24 @@ public class VectorComplejoTest {
             ArrayList<NumeroComplejo> array = new ArrayList<NumeroComplejo>();
             array.add(c.sumeComplejo(c));
             VectorComplejo respuestaEsperada = new VectorComplejo(array);
-            assertEquals(respuestaEsperada,respuesta);
+            assertTrue(respuestaEsperada.equals(respuesta));
         }catch (CalculadoraComplejosException e){
 
+        }
+    }
+
+    @org.junit.Test
+    public void noDeberiaSumarVectores(){
+        System.out.println("sumeVectores");
+        NumeroComplejo c= new NumeroComplejo(2.0,-3.5);
+        VectorComplejo vectorUno= new VectorComplejo();
+        VectorComplejo vectorDos= new VectorComplejo();
+        vectorUno.add(c);
+        try {
+            VectorComplejo respuesta = vectorUno.sumeVectores(vectorDos);
+           fail("si paso el error");
+        }catch (CalculadoraComplejosException e){
+            System.out.println("atrapo el error");
         }
     }
 }

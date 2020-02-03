@@ -120,11 +120,31 @@ public class NumeroComplejoTest {
     @org.junit.Test
     public void testDividaComplejo() {
         System.out.println("dividaComplejo");
-        NumeroComplejo c = new NumeroComplejo(1.0,2.0);
-        NumeroComplejo instance = new NumeroComplejo(-2.0,1.0);
-        NumeroComplejo expResult = new NumeroComplejo(0.0,1.0);
-        NumeroComplejo result = instance.dividaComplejo(c);
-        assertEquals(expResult, result);
+        try {
+            NumeroComplejo c = new NumeroComplejo(1.0, 2.0);
+            NumeroComplejo instance = new NumeroComplejo(-2.0, 1.0);
+            NumeroComplejo expResult = new NumeroComplejo(0.0, 1.0);
+            NumeroComplejo result = instance.dividaComplejo(c);
+            assertEquals(expResult, result);
+        }catch (CalculadoraComplejosException e){
+            fail("no realizo la operacion");
+        }
+    }
+
+    /**
+     * Test of dividaComplejo method, of class NumeroComplejo.
+     */
+    @org.junit.Test
+    public void divideByZero() {
+        System.out.println("dividaComplejo pero con zero");
+        try {
+            NumeroComplejo c = new NumeroComplejo(0.0, 0.0);
+            NumeroComplejo instance = new NumeroComplejo(1.0, 2.0);
+            NumeroComplejo result = instance.dividaComplejo(c);
+            fail("realizo la operacion");
+        }catch (CalculadoraComplejosException e){
+            System.out.println("atrapo el error");
+        }
     }
 
     /**
