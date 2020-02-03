@@ -41,5 +41,5 @@ buildNumber.properties
 
 # End of https://www.gitignore.io/api/java,maven
 
-/nhbproject
+/nbproject
 /.idea
