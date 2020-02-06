@@ -175,6 +175,19 @@ public class VectorComplejo {
         return ans;
     }
 
+    /**
+     * pasa a string el valor del Vector
+     * @return s
+     */
+    public  StringBuilder print(){
+        StringBuilder s= new StringBuilder();
+        for(int i= 0; i< this.getSize(); i++){
+            s.append(this.get(i).toString());
+            s.append(" ");
+        }
+        return s;
+    }
+
     @Override
     public boolean equals(Object o){
         VectorComplejo nv= (VectorComplejo) o;

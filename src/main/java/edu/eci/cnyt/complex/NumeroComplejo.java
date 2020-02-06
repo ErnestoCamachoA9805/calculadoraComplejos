@@ -150,6 +150,16 @@ public class NumeroComplejo {
 			return imaginaria;
 		}
 
+	@Override
+	/**
+	 * pasa el valor de pretty printing a string
+	 * @return
+	 * S
+	 */
+	public String toString(){
+		return this.prettyPrinting();
+	}
+
 
 
 	@Override

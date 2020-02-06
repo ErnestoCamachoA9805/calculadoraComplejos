@@ -183,7 +183,7 @@ public class MatrizCompleja {
      *
      * @return boolean si la la matriz es unitaria
      */
-    public boolean unitary() {
+    public boolean unitaria() {
         MatrizCompleja complexMatriz;
         boolean ans = true;
         try {
@@ -259,6 +259,31 @@ public class MatrizCompleja {
         return true;
     }
 
+    /**
+     * retorna el elemento indicado
+     * @param fila columna
+     * @return n
+     */
+    public NumeroComplejo get(int fila, int columna){
+        return matriz[fila][columna];
+    }
+
+    /**
+     * pasa a Sting a la matriz
+     * @return s
+     */
+    public StringBuilder aString(){
+        StringBuilder s= new StringBuilder();
+        for(int i=0 ; i< matriz.length; i++){
+            for(int j=0; j< matriz[0].length; j++){
+                s.append(this.get(i,j).toString());
+                s.append(" ");
+            }
+            s.append("\n");
+        }
+        return s;
+    }
+
     public void fill(NumeroComplejo value) {
         for (int i = 0; i < matriz.length; i++) {
             Arrays.fill(matriz[i], value);
@@ -286,13 +311,45 @@ public class MatrizCompleja {
         return matriz;
     }
 
-    /*
+
     public static void main(String[] args) {
-        MatrizCompleja a = new MatrizCompleja(2, 2);
-        a.asigna(0, 0, new NumeroComplejo(1.0 / 3.0, 0.0));
-        a.asigna(0, 1, new NumeroComplejo(2.0 / 3.0, 0.0));
-        a.asigna(1, 0, new NumeroComplejo(2.0 / 3.0, 0.0));
-        a.asigna(1, 1, new NumeroComplejo(1.0 / 3.0, 0.0));
-        MatrizCompleja b = a.tensorProduct(a);
-    }*/
+        MatrizCompleja x = new MatrizCompleja(2, 2);
+        x.asigna(0, 0, new NumeroComplejo(0.0 , 0.0));
+        x.asigna(0, 1, new NumeroComplejo(1.0 , 0.0));
+        x.asigna(1, 0, new NumeroComplejo(1.0 , 0.0));
+        x.asigna(1, 1, new NumeroComplejo(0.0 , 0.0));
+
+        MatrizCompleja h= new MatrizCompleja(2,2);
+        h.asigna(0,0, new NumeroComplejo(1.0,0.0));
+        h.asigna(0,1, new NumeroComplejo(1.0,0.0));
+        h.asigna(1,0, new NumeroComplejo(1.0,0.0));
+        h.asigna(1,1, new NumeroComplejo(-1.0,0.0));
+
+        VectorComplejo qBit= new VectorComplejo();
+        qBit.add( new NumeroComplejo(1.0 , 0.0));
+        qBit.add( new NumeroComplejo(0.0 , 0.0));
+        qBit.add( new NumeroComplejo(0.0 , 0.0));
+        qBit.add( new NumeroComplejo(0.0 , 0.0));
+
+        //MatrizCompleja H= new MatrizCompleja(h.escalarProduct(new NumeroComplejo(1.0/Math.pow(2.0,0.5),0.0)).getMatriz());
+
+        MatrizCompleja M1= x.tensorProduct(h);
+        MatrizCompleja M2= h.tensorProduct(h);
+        try{
+            MatrizCompleja M3= M1.productoMatrizMatriz(M2);
+            VectorComplejo Resp= M3.productoMatrizVector(qBit);
+
+            System.out.println(M1.aString().toString());
+            System.out.println();
+            System.out.println(M2.aString().toString());
+            System.out.println();
+            System.out.println(M3.aString().toString());
+            System.out.println();
+            System.out.println(Resp.print().toString());
+        }catch (CalculadoraComplejosException e){
+            e.printStackTrace();
+        }
+
+        //MatrizCompleja b = a.tensorProduct(a);
+    }
 }
