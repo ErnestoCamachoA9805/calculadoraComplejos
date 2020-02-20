@@ -188,6 +188,19 @@ public class VectorComplejo {
         return s;
     }
 
+    /**
+     * pasa a String el vector
+     * @return s 
+     */
+    public String toString() {
+    	StringBuilder s= new StringBuilder();
+        for(int i= 0; i< this.getSize(); i++){
+            s.append(this.get(i).toString());
+            s.append("\n");
+        }
+        return s.toString();
+    }
+
     @Override
     public boolean equals(Object o){
         VectorComplejo nv= (VectorComplejo) o;
