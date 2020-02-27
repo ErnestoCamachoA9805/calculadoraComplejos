@@ -311,7 +311,7 @@ public class MatrizCompleja {
         return matriz;
     }
 
-
+/*
     public static void main(String[] args) {
         MatrizCompleja x = new MatrizCompleja(2, 2);
         x.asigna(0, 0, new NumeroComplejo(0.0 , 0.0));
@@ -352,4 +352,5 @@ public class MatrizCompleja {
 
         //MatrizCompleja b = a.tensorProduct(a);
     }
+    */
 }

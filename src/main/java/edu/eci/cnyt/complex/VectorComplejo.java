@@ -152,6 +152,21 @@ public class VectorComplejo {
         }
         return respuesta;
     }
+    
+    /**
+     * retotrna el producto tensor entre vectores
+     * @param vector, el vector para hacer el producto
+     * @return resp, el vector que es reusltado de hacer el producto vector entre los vectores
+     */
+    public VectorComplejo productoTensor(VectorComplejo vector) {
+    	List<NumeroComplejo> respuesta= new ArrayList<NumeroComplejo>();
+    	for (int i= 0; i< this.getSize(); i++) {
+    		for (int j= 0; j< vector.getSize(); j++) {
+    			respuesta.add(this.get(i).productoComplejo(vector.get(j)));
+    		}
+    	}
+    	return new VectorComplejo(respuesta);
+    }
 
 
     /**
