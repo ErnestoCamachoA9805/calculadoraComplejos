@@ -5,6 +5,9 @@ rendijas, dado que las probabilidades eran claras, sin embargo el simulador debe
 entre, por supuesto, esto es asumendo que el usuario ingresa la matriz con las probabilidades correctas y un vector de estado inicial
 correcto.
 
-Autores:
-* Juan David Murillo
-* Ernesto Camacho Arroyave
+## Autores
+
+* *Ernesto Camacho Arroyave* [Github](https://github.com/ErnestoCamachoA9805)
+* *Juan David Murillo* [Github](https://github.com/juancho20sp) | [Twitter](https://twitter.com/juancho20sp)<br/>
+Estudiantes en la [Escuela Colombiana de Ingeniería Julio Garavito](https://www.escuelaing.edu.co/es/) <br/>
+2020
