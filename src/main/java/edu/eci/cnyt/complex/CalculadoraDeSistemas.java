@@ -2,6 +2,7 @@ package edu.eci.cnyt.complex;
 
 import edu.eci.cnyt.complex.*;
 
+
 public class CalculadoraDeSistemas {
 	
 	public static void ejercicioDoctor() {
@@ -94,27 +95,11 @@ public class CalculadoraDeSistemas {
 		configInicial.add(new NumeroComplejo( 0.0 , 0.0));
 		
 		VectorComplejo respuesta= null;
-		
-		for(int i= 0; i< sistema.g)
-		try {
-			for (int i=0; i< 1;i++) {
-				if ( i== 0 ){
-					respuesta= sistema.productoMatrizVector(configInicial);
-				}
-				else {
-					respuesta= sistema.productoMatrizVector(respuesta);
-				}
-			}
-		}catch(CalculadoraComplejosException e) {
-			}
-	
-		//System.out.println(sistema.aString().toString());
-		System.out.println(respuesta.toString());
-	}
+		}
 	
 	public static void main(String[] args) {
 		//ejercicioDoctor();
 		//ejercicioQuiz1();
-		ejercicioQuiz2();
+		//ejercicioQuiz2();
 	}
 }
