@@ -1,6 +1,6 @@
 ## Experimento de la Doble rendija
 
-Para el desarrollo de la simulación se usó ésta librería de números complejos. El único experimento simulado resulta ser el de dos
+Para el desarrollo de la simulación se usó esta librería de números complejos. El único experimento simulado resulta ser el de dos
 rendijas, dado que las probabilidades eran claras, sin embargo el simulador funciona con cualquier *input* que el usuario 
 ingrese, por supuesto, esto es asumiendo que el usuario ingresa una matriz con probabilidades correctas y un vector de estado inicial
 correcto.
