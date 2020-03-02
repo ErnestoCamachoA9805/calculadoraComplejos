@@ -10,7 +10,7 @@ correcto.
 # ESCRIBA LAS FUNCIONES QUE USÓ, COMO SE INVOCAN Y QUE PARÁMETROS RECIBEN, ADEMÁS DE UNA PEQUEÑA EXPLICACIÓN DE LOS MISMOS
 ```
 
-## Informe de resultados
+### Informe de resultados
 El informe de resultados se encuentra en Moodle y es un breve documento en LaTeX que resume algunas conclusiones del montaje y posterior prueba del experimento.
 
 ## Autores
