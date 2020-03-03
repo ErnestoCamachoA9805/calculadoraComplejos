@@ -52,6 +52,11 @@ public class Simulacion {
 		
 	}
 	
+	public void build(MatrizCompleja matriz, VectorComplejo inicial) {
+		this.matriz= matriz;
+		this.inicial= inicial;
+	}
+	
 	public VectorComplejo click(int numero) {
 		try {
 			for (int i=0; i< numero;i++) {
