@@ -6,9 +6,10 @@ ingrese, por supuesto, esto es asumiendo que el usuario ingresa una matriz con p
 correcto.
 
 ## Funciones
-```java
-# ESCRIBA LAS FUNCIONES QUE USÓ, COMO SE INVOCAN Y QUE PARÁMETROS RECIBEN, ADEMÁS DE UNA PEQUEÑA EXPLICACIÓN DE LOS MISMOS
-```
+ # La estructura basica de la simulacion es:
+ ![](https://raw.githubusercontent.com/ErnestoCamachoA9805/calculadoraComplejos/master/Simulacion/Simulacion/EstructuraBasica.png) 
+ *COMO SE INVOCAN Y QUE PARÁMETROS RECIBEN, 
+ *ADEMÁS DE UNA PEQUEÑA EXPLICACIÓN DE LOS MISMOS
 
 ### Informe de resultados
 El informe de resultados se encuentra en Moodle y es un breve documento en LaTeX que resume algunas conclusiones del montaje y posterior prueba del experimento.
