@@ -1,5 +1,30 @@
 # Experimento de la Doble rendija
 
+## Descripcion del experimento
+El experimento de la doble rendija evidencia como, contrario a lo que se creer´ıa,
+cuando una onda pasa a traves de una ”pared” con divisiones esta sigue su rumbo ´
+y al momento de medirla nos encontramos con que tiene ”vacios” a lo largo de su
+extension. ´
+La explicacion del por qu ´ e de estos vac ´ ´ıos ha sido materia de estudio de la fisica
+desde hace mucho tiempo, hoy en d´ıa la mejor aproximacion que podemos encon- ´
+trar esta en la fısica de ondas, que nos dice que por interferencia de las mismas hay
+puntos en los cuales las ondas son iguales y contrarias, lo que hace que ´ estas se ´
+”cancelen” mutuamente.
+Ademas de esta teor ´ ´ıa, podemos encontrarnos tambien con la que trata de expli- ´
+carlo a traves de la f ´ ´ısica cuantica; donde b ´ asicamente esos vac ´ ´ıos son una representacion´ en este universo de la interferencia entre las historias de dichas particulas
+en otros universos.
+
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+
+
+
+# Simulacion
 Para el desarrollo de la simulación se usó esta librería de números complejos. El único experimento simulado resulta ser el de dos
 rendijas, dado que las probabilidades eran claras, sin embargo el simulador funciona con cualquier *input* que el usuario 
 ingrese, por supuesto, esto es asumiendo que el usuario ingresa una matriz con probabilidades correctas y un vector de estado inicial
