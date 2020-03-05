@@ -1,4 +1,10 @@
+# Escuela Colombiana de Ingenieria Julio Garavito
+
 # Experimento de la Doble rendija
+## Abstract
+The goal of this experiment is to create an interference pattern using aluminum foil, a laser, some plastic cards and cutter. For achieving this, we made
+some templates (squares of aluminum foil or plastic cards with an specific number of cuts in it), then we set up our laser and finally put all together.
+Keywords: double-slit; quantum mechanics; quantum computing; interference.
 
 ## Descripcion del experimento
 El experimento de la doble rendija evidencia como, contrario a lo que se creer´ıa,
