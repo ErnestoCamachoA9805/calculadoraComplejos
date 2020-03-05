@@ -14,13 +14,13 @@ Ademas de esta teor ´ ´ıa, podemos encontrarnos tambien con la que trata de e
 carlo a traves de la f ´ ´ısica cuantica; donde b ´ asicamente esos vac ´ ´ıos son una representacion´ en este universo de la interferencia entre las historias de dichas particulas
 en otros universos.
 
-![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/DosRendijas.PNG)
 
-![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/TresRendijas.PNG)
 
-![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/CuatroRendijas.PNG)
 
-![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG)
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/CincoRendijas.PNG)
 
 
 
