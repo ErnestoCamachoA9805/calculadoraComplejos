@@ -16,6 +16,7 @@ Ademas de esta teoría, podemos encontrarnos también con la que trata de explic
 
 ## Evidencia fotográfica
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/DosRendijas.PNG)
+Láser a través de acetato con dos rendijas.
 
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/TresRendijas.PNG)
 
