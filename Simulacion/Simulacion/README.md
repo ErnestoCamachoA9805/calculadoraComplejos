@@ -25,6 +25,11 @@ Ademas de esta teoría, podemos encontrarnos también con la que trata de explic
 </div>
 <p align="center">Pensamiento y respuesta cuántica del experimento</p>
 
+## ¿Cómo se hizo el expermiento?
+Para este experimento se hicieron varios montajes y se probó con varios modelos y materiales (rejillas de acetato, de aluminio y finalmente hilo dental). 
+**Materiales:**
+* Láser con una longitud de onda de 532 nanómetros.
+* Hilo dental
 
 ## Evidencia fotográfica
 ### Patrones de interferencia obtenidos:
