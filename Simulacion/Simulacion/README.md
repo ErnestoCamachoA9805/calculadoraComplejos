@@ -20,9 +20,9 @@ Ademas de esta teoría, podemos encontrarnos también con la que trata de explic
 
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cl%C3%A1sico.jpg)
 <p align="center">Pensamiento clásico del experimento</p>
-<p align"center">
+<div align"center">
 <img src="https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cu%C3%A1ntico.jpg">
-</p>
+</div>
 <p align="center>"Pensamiento y respuesta cuántica del experimento </p>
 
 ## Evidencia fotográfica
