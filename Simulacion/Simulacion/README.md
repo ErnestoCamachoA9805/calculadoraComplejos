@@ -6,6 +6,9 @@ The goal of this experiment is to create an interference pattern using aluminum 
 some templates (squares of aluminum foil or plastic cards with an specific number of cuts in it), then we set up our laser and finally put all together.
 Keywords: *double-slit; quantum mechanics; quantum computing; interference*.
 
+## ¿Qué es el experimento de young?
+hgfjhgfjh jhgfjhgtfjyhf kjhghfkuy ljhgkuygkuygmm ygiuygfuyf
+
 ## Descripción del experimento
 El experimento de la doble rendija evidencia como, contrario a lo que se creería,
 cuando un electrón (o en este caso, un haz de luz) pasa a traves de una *pared* con divisiones esta sigue su rumbo y al momento de medirla nos encontramos con que tiene *vacios* (interferencias) a lo largo de su
@@ -13,6 +16,9 @@ extensión.
 La explicación del por qué de estos vacíos ha sido materia de estudio de la fisica
 desde hace mucho tiempo, hoy en día una de las aproximaciones que podemos encontrar está en la física de ondas, que nos dice que por interferencia de las mismas hay puntos en los cuales las ondas son iguales y contrarias, lo que hace que estas se *cancelen* mutuamente.
 Ademas de esta teoría, podemos encontrarnos también con la que trata de explicarlo a traves de la física cuántica; donde básicamente esos vacíos son una representación en este universo de la interferencia entre las historias de dichas particulas en otros universos.
+
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cl%C3%A1sico.jpg)
+![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cu%C3%A1ntico.jpg)
 
 ## Evidencia fotográfica
 ### Patrones de interferencia obtenidos:
