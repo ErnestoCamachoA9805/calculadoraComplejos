@@ -22,8 +22,9 @@ Ademas de esta teoría, podemos encontrarnos también con la que trata de explic
 <p align="center">Pensamiento clásico del experimento</p>
 <div align"center">
 <img src="https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cu%C3%A1ntico.jpg">
+<p>"Pensamiento y respuesta cuántica del experimento </p>
 </div>
-<p align="center>"Pensamiento y respuesta cuántica del experimento </p>
+
 
 ## Evidencia fotográfica
 ### Patrones de interferencia obtenidos:
