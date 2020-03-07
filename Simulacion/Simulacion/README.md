@@ -18,7 +18,7 @@ desde hace mucho tiempo, hoy en día una de las aproximaciones que podemos encon
 Ademas de esta teoría, podemos encontrarnos también con la que trata de explicarlo a traves de la física cuántica; donde básicamente esos vacíos son una representación en este universo de la interferencia entre las historias de dichas particulas en otros universos.
 
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cl%C3%A1sico.jpg)
-Pensamiento clásico del experimento
+<p align="center">Pensamiento clásico del experimento</p>
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Cu%C3%A1ntico.jpg)
 
 ## Evidencia fotográfica
