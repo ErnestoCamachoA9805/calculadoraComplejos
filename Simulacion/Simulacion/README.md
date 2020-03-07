@@ -63,6 +63,7 @@ correcto.
  El método click recibe un entero que será el número de clicks que se la va a dar al sistema, los demás métodos son configuraiones del sistema, build recibe una matriz de complejos que será la matriz del sistema y un vector de complejos que será el estado inicial del sistema.
 
 # Simulación en Python!
+Esta es una simulación del ejemplo planteado en el libro guía del curso. Cabe afirmar que en el programa no se tienen en cuenta todos los aspectos neesarios y que está netamente enfocado a graficar la interferencia (como barras de altura cero) en el diagrama de barras.
 ## Funciones
 ```python
 simulation(matrix, state, clicks) # Recibe una matrix compleja, un vector de estados complejo y el npumero de clicks. Retorna el vector con el estado resultante luego de la medición.
