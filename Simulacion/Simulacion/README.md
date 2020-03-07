@@ -42,33 +42,37 @@ Para este experimento se hicieron varios montajes y se probó con varios modelos
 ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/CincoRendijas.PNG)
 
 
-
 # Simulación
+<div align="center">
+<img src="https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/Esquema.jpg">
+</div>
+<p align="center">Gráfico del comportamiento del sistema a simular</p>
+## Simulación Java
 Para el desarrollo de la simulación se usó esta librería de números complejos. El único experimento simulado resulta ser el de dos
 rendijas, dado que las probabilidades eran claras, sin embargo el simulador funciona con cualquier *input* que el usuario 
 ingrese, por supuesto, esto es asumiendo que el usuario ingresa una matriz con probabilidades correctas y un vector de estado inicial
 correcto.
 
-# Funciones
- ## La estructura básica de la simulación es:
+### Funciones
+ #### La estructura básica de la simulación es:
  En la que se ven 2 métodos simples para pedir información, un constructor básico que hace el experimento de 2 rendijas, un método privado para llenar la matriz y el vector default. Finalmente los métodos para hacer el click y para construir un sistema que hace el usuario.
  
  ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG) 
  
- ## Métodos de importancia
+ #### Métodos de importancia
  Los métodos más importantes son el de clicks y el de build, los cuales permiten al sistema dar click y establecer un sistema definido por el usuario.
  
  ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/MetodosFinales.PNG) 
  
  El método click recibe un entero que será el número de clicks que se la va a dar al sistema, los demás métodos son configuraiones del sistema, build recibe una matriz de complejos que será la matriz del sistema y un vector de complejos que será el estado inicial del sistema.
 
-# Simulación en Python!
+## Simulación en Python!
 Esta es una simulación del ejemplo planteado en el libro guía del curso. Cabe afirmar que en el programa no se tienen en cuenta todos los aspectos neesarios y que está netamente enfocado a graficar la interferencia (como barras de altura cero) en el diagrama de barras.
-## Funciones
+### Funciones
 ```python
 simulation(matrix, state, clicks) # Recibe una matrix compleja, un vector de estados complejo y el npumero de clicks. Retorna el vector con el estado resultante luego de la medición.
 ```
-## Funciones auxiliares
+### Funciones auxiliares
 ```python
 lets_graph(vector) # Grafica el vector recibido en un diagrama de barras usando la librería matplotlib.
 requirements(matrix) # Verifica que la matriz sea unitaria (si es compleja) o estocástica (si es real).
