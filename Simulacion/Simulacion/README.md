@@ -51,7 +51,7 @@ correcto.
 
 # Funciones
  ## La estructura básica de la simulación es:
- En la que se ven 2 metodos simples para pedir informacion, un constructor básico que hace el experimento de 2 rendijas, un método privado para llenar la matriz y el vector default. Finalmente los métodos para hacer el click y para construir un sistema que hace el usuario.
+ En la que se ven 2 métodos simples para pedir información, un constructor básico que hace el experimento de 2 rendijas, un método privado para llenar la matriz y el vector default. Finalmente los métodos para hacer el click y para construir un sistema que hace el usuario.
  
  ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/EstructuraBasica.PNG) 
  
@@ -61,6 +61,17 @@ correcto.
  ![](https://github.com/ErnestoCamachoA9805/calculadoraComplejos/blob/master/Simulacion/Simulacion/imagenes/MetodosFinales.PNG) 
  
  El método click recibe un entero que será el número de clicks que se la va a dar al sistema, los demás métodos son configuraiones del sistema, build recibe una matriz de complejos que será la matriz del sistema y un vector de complejos que será el estado inicial del sistema.
+
+# Simulación en Python!
+## Funciones
+```python
+simulation(matrix, state, clicks) # Recibe una matrix compleja, un vector de estados complejo y el npumero de clicks. Retorna el vector con el estado resultante luego de la medición.
+```
+## Funciones auxiliares
+```python
+lets_graph(vector) # Grafica el vector recibido en un diagrama de barras usando la librería matplotlib.
+requirements(matrix) # Verifica que la matriz sea unitaria (si es compleja) o estocástica (si es real).
+```
 
 ### Informe de resultados
 El informe de resultados se encuentra en Moodle y es un breve documento en LaTeX que resume algunas conclusiones del montaje y posterior prueba del experimento.
