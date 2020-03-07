@@ -26,7 +26,7 @@ Ademas de esta teoría, podemos encontrarnos también con la que trata de explic
 <p align="center">Pensamiento y respuesta cuántica del experimento</p>
 
 ## ¿Cómo se hizo el expermiento?
-Para este experimento se hicieron varios montajes y se probó con varios modelos y materiales (rejillas de acetato, de aluminio y finalmente hilo dental). 
+Para este experimento se hicieron varios montajes y se probó con varios modelos y materiales (rejillas de acetato, de aluminio y finalmente hilo dental). <br/>
 **Materiales:**
 * Láser con una longitud de onda de 532 nanómetros.
 * Hilo dental
