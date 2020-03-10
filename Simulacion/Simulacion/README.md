@@ -7,7 +7,7 @@ some templates (squares of aluminum foil or plastic cards with an specific numbe
 Keywords: *double-slit; quantum mechanics; quantum computing; interference*.
 
 ## ¿Qué es el experimento de young?
-hgfjhgfjh jhgfjhgtfjyhf kjhghfkuy ljhgkuygkuygmm ygiuygfuyf
+El experimento de Thomas Young, mejor conocido como el experimento de la doble rendija, fue originalmento concebido para probar la naturaleza ondulatoria de la luz, el montaje del experimento se explica en la siguiente entrada, uno de los resultados del experimento usando ondas, permitio notar la interferencia que hay entre ellas al pasar por las rendijas lo que hace que se cree y un patron en las zonas de impacto de estas ondas, lo que se encontro fue que para particulas pequeñas, un electron por ejemplo, el patron era el mismo, lo interesante es que el electron no tenia algun otro obejto con el cual interactuar entre el que le disparaba, la rendija y el sensor, y aun asi tras repetidas pruebas tambien se veia el patron de interfercia, esto supone que el electron interfiere con su historia y da la idea de la existencia de multiples universos. 
 
 ## Descripción del experimento
 El experimento de la doble rendija evidencia como, contrario a lo que se creería,
