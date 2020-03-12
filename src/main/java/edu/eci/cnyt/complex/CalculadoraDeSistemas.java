@@ -146,12 +146,39 @@ public class CalculadoraDeSistemas {
 		observable.asigna(0, 1, new NumeroComplejo( 1.0 , 1.0));
 		observable.asigna(1, 0, new NumeroComplejo( 1.0 , -1.0));
 		observable.asigna(1, 1, new NumeroComplejo( 3.0, 0.0));
+		
+		VectorComplejo estadoInicial= new VectorComplejo();
+		VectorComplejo estadoFinal= new VectorComplejo();
+		
+		estadoInicial.add(new NumeroComplejo(1.0,0.0));
+		estadoInicial.add(new NumeroComplejo(0.0,-1.0));
+		
+		estadoFinal.add(new NumeroComplejo(0.0,1.0));
+		estadoFinal.add(new NumeroComplejo(1.0,0.0));
+		
+		NumeroComplejo productoNormas= new NumeroComplejo(estadoInicial.norma()*estadoFinal.norma(),0.0);
+		
+		estadoFinal=estadoFinal.adjunta();
+		System.out.println(estadoFinal.toString());
+		
+		System.out.println(estadoInicial.norma());
+		
+		try {
+			System.out.println(estadoFinal.productoInterno(estadoInicial));
+			
+			System.out.println(estadoFinal.productoInterno(estadoInicial).dividaComplejo(productoNormas));
+		} catch (CalculadoraComplejosException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
 	}
 	
 	public static void main(String[] args) {
 		//ejercicioDoctor();
 		//ejercicioQuiz1();
 		//ejercicioQuiz2();
-		ejecicio1AcitivdadLab3();
+		//ejecicio1AcitivdadLab3();
+		ejercicio2ActividadLab3();
 	}
 }
