@@ -97,9 +97,61 @@ public class CalculadoraDeSistemas {
 		VectorComplejo respuesta= null;
 		}
 	
+	public static void ejecicio1AcitivdadLab3() {
+		VectorComplejo vectorInicial= new VectorComplejo();
+		VectorComplejo vectorEstado= new VectorComplejo();
+		
+		//### inicial
+		vectorInicial.add(new NumeroComplejo( 2.0 , 1.0));
+		vectorInicial.add(new NumeroComplejo( -1.0 , 2.0));
+		vectorInicial.add(new NumeroComplejo( 0.0 , 1.0));
+		vectorInicial.add(new NumeroComplejo( 1.0 , 0.0));
+		vectorInicial.add(new NumeroComplejo( 3.0 , -1.0));
+		vectorInicial.add(new NumeroComplejo( 2.0 , 0.0));
+		vectorInicial.add(new NumeroComplejo( 0.0 , -2.0));
+		vectorInicial.add(new NumeroComplejo( -2.0 , 1.0));
+		vectorInicial.add(new NumeroComplejo( 1.0 , -3.0));
+		vectorInicial.add(new NumeroComplejo( 0.0 , -1.0));
+		//### Estado
+		vectorEstado.add(new NumeroComplejo( 1.0 , -4.0));
+		vectorEstado.add(new NumeroComplejo( 2.0 , -3.0));
+		vectorEstado.add(new NumeroComplejo( -7.0 , 6.0));
+		vectorEstado.add(new NumeroComplejo( -1.0 , 1.0));
+		vectorEstado.add(new NumeroComplejo( -5.0 , -3.0));
+		vectorEstado.add(new NumeroComplejo( 5.0 , 0.0));
+		vectorEstado.add(new NumeroComplejo( 5.0 , 8.0));
+		vectorEstado.add(new NumeroComplejo( 4.0 , -4.0));
+		vectorEstado.add(new NumeroComplejo( 8.0 , -7.0));
+		vectorEstado.add(new NumeroComplejo( 2.0 , -7.0));
+		
+		NumeroComplejo normaInicial= new NumeroComplejo((double)1.0/vectorInicial.norma(),0.0);
+		NumeroComplejo normaEstado= new NumeroComplejo((double)1.0/vectorEstado.norma(),0.0);
+		
+		VectorComplejo inicialNormalizado= vectorInicial.multiplicacionEscalar(normaInicial);
+		VectorComplejo estadoNormalizado= vectorEstado.multiplicacionEscalar(normaEstado);
+		
+		VectorComplejo vectorAdjunto= estadoNormalizado.adjunta();
+		
+		try {
+			System.out.println(vectorAdjunto.productoInterno(inicialNormalizado).prettyPrinting());
+		} catch (CalculadoraComplejosException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	}
+	
+	public static void ejercicio2ActividadLab3() {
+		MatrizCompleja observable = new MatrizCompleja(2, 2);
+		observable.asigna(0, 0, new NumeroComplejo( 2.0 , 0.0));
+		observable.asigna(0, 1, new NumeroComplejo( 1.0 , 1.0));
+		observable.asigna(1, 0, new NumeroComplejo( 1.0 , -1.0));
+		observable.asigna(1, 1, new NumeroComplejo( 3.0, 0.0));
+	}
+	
 	public static void main(String[] args) {
 		//ejercicioDoctor();
 		//ejercicioQuiz1();
 		//ejercicioQuiz2();
+		ejecicio1AcitivdadLab3();
 	}
 }

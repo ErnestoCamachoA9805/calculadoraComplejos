@@ -112,6 +112,19 @@ public class VectorComplejo {
         }
         return respuesta;
     }
+    
+    /**
+     * retorna la adjunta del vector
+     * @return
+     * adujta
+     */
+    public VectorComplejo adjunta() {
+    	VectorComplejo adjunta= new VectorComplejo();
+    	for (int i=0; i< this.getSize();i++) {
+    		adjunta.add(this.get(i).conjugado());
+    	}
+    	return adjunta;
+    }
 
     /**
      * Retorna la norma del vector
